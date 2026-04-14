@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WestCam Solutions - Estructura Segmentada Completa</title>
+</head>
+<body>
+
+    <header>
+        <strong>@ WestCam Solutions</strong>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tienda">Productos</a></li>
+                <li><a href="#servicios">Programar Instalación</a></li>
+                <li><a href="#academia">Cursos</a></li>
+                <li><a href="#carrito">Carrito</a></li>
+                <li><a href="#pago">Pago Final</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+            <fieldset>
+                <legend><strong>Página 1: Bienvenida</strong></legend>
+                <h1>Servicios Profesionales de Seguridad</h1>
+                <p>[Espacio para Imagen: Banner Principal de Videovigilancia]</p>
+                <p>Adquiera no solo productos, sino soluciones implementadas con éxito en todo Panamá Oeste.</p>
+                <button type="button">Ver Catálogo de Equipos</button>
+            </fieldset>
+            <br>
+        </section>
+
+        <section id="tienda">
+            <fieldset>
+                <legend><strong>Página 2: Tienda de Equipos</strong></legend>
+                <h2>Nuestros Productos Más Top</h2>
+                <article>
+                    <fieldset>
+                        <legend>Cámara Dahua</legend>
+                        <h3>Dahua - Cámara Análoga Bullet 2.8 MM 5MP</h3>
+                        <p>Precio: $60.00 + ITBMS</p>
+                        <button type="button">Añadir al Carrito</button>
+                    </fieldset>
+                </article>
+            </fieldset>
+            <br>
+        </section>
+
+        <section id="servicios">
+            <fieldset>
+                <legend><strong>Página 3: Soporte Técnico</strong></legend>
+                <h2>Programar tu Instalación</h2>
+                <p>Complete los datos para agendar una visita técnica en su residencia o comercio.</p>
+                
+                <form>
+                    <fieldset>
+                        <legend>Datos de la Solicitud</legend>
+                        <label for="ins-tipo">Tipo de Servicio*:</label><br>
+                        <select id="ins-tipo" required>
+                            <option value="">Seleccione una opción...</option>
+                            <option>Instalación Residencial</option>
+                            <option>Seguridad Comercial</option>
+                            <option>Mantenimiento de Sistema</option>
+                            <option>Configuración de Red IP</option>
+                        </select>
+                        <br><br>
+
+                        <label for="ins-fecha">Fecha Preferida*:</label><br>
+                        <input type="date" id="ins-fecha" required>
+                        <br><br>
+
+                        <label for="ins-detalles">¿Qué equipos desea instalar?:</label><br>
+                        <textarea id="ins-detalles" rows="3" placeholder="Ej: 4 cámaras y 1 DVR Dahua"></textarea>
+                        <br><br>
+
+                        <button type="submit">Enviar Solicitud de Instalación</button>
+                    </fieldset>
+                </form>
+            </fieldset>
+            <br>
+        </section>
+
+        <section id="academia">
+            <fieldset>
+                <legend><strong>Página 4: WestCam Academy</strong></legend>
+                <h2>DOMINA TU INSTALACIÓN 🛠️</h2>
+                <ul>
+                    <li>✅ TUTORIALES PASO A PASO EN VIDEO</li>
+                    <li>✅ CONFIGURACIÓN DE RED SEGURA</li>
+                    <li>✅ ACCESO DE POR VIDA DESDE EL CELULAR</li>
+                </ul>
+                <p><strong>Precio del Curso: $25.00</strong></p>
+
+                <form>
+                    <fieldset>
+                        <legend>Inscripción al Curso</legend>
+                        <label for="ac-correo">Correo electrónico*:</label><br>
+                        <input type="email" id="ac-correo" placeholder="usuario@gmail.com" required>
+                        <br><br>
+
+                        <label for="ac-pago">Método de Pago*:</label><br>
+                        <select id="ac-pago" required>
+                            <option>Yappy</option>
+                            <option>Tarjeta de Crédito</option>
+                            <option>ACH (Banco General)</option>
+                        </select>
+                        <br><br>
+
+                        <button type="submit">Pagar Curso y Acceder</button>
+                    </fieldset>
+                </form>
+            </fieldset>
+            <br>
+        </section>
+
+        <section id="carrito">
+            <fieldset>
+                <legend><strong>Página 5: Gestión de Compra</strong></legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto Seleccionado</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dahua Bullet 5MP (Hardware)</td>
+                            <td>$60.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><strong>Total Estimado: $64.20 (con ITBMS)</strong></p>
+                <button type="button">Continuar al Pago >></button>
+            </fieldset>
+            <br>
+        </section>
+
+        <section id="pago">
+            <fieldset>
+                <legend><strong>Página 6: Finalizar Pedido</strong></legend>
+                <form>
+                    <fieldset>
+                        <legend>Información de Envío</legend>
+                        <label for="f-nombre">Nombre*:</label>
+                        <input type="text" id="f-nombre" required><br><br>
+                        
+                        <label for="f-apellido">Apellido*:</label>
+                        <input type="text" id="f-apellido" required>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Ubicación en Panamá Oeste</legend>
+                        <label for="f-calle">Dirección Exacta*:</label>
+                        <input type="text" id="f-calle" placeholder="Barriada, Calle y Casa" required><br><br>
+                        
+                        <label for="f-distrito">Distrito*:</label>
+                        <select id="f-distrito">
+                            <option>La Chorrera</option>
+                            <option>Arraiján</option>
+                            <option>Capira</option>
+                        </select>
+                    </fieldset>
+                    <br>
+
+                    <fieldset>
+                        <legend>Método de Pago</legend>
+                        <p>Seleccione cómo desea pagar su equipo e instalación:</p>
+                        
+                        <label for="f-metodo">Forma de Pago*:</label><br>
+                        <select id="f-metodo" required>
+                            <option value="">Seleccione...</option>
+                            <option value="yappy">Yappy</option>
+                            <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                            <option value="efectivo">Efectivo (Contra entrega)</option>
+                            <option value="ach">Transferencia Banco General (ACH)</option>
+                        </select>
+                        <br><br>
+
+                        <label for="f-detalles-pago">Número de Tarjeta o Referencia:</label><br>
+                        <input type="text" id="f-detalles-pago" placeholder="Escriba aquí los datos de pago">
+                    </fieldset>
+                    <br>
+
+                    <fieldset>
+                        <legend>Confirmación Final</legend>
+                        <label>
+                            <input type="checkbox" required> Acepto los términos de servicio*
+                        </label>
+                        <br><br>
+                        <button type="submit">Confirmar Pedido Final</button>
+                    </fieldset>
+                </form>
+            </fieldset>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <fieldset>
+            <legend>Contacto WestCam</legend>
+            <p>Soporte Técnico: Costa Verde, La Chorrera</p>
+            <p>WhatsApp: (+507) 6564-6376</p>
+            <p>&copy; 2026 WestCam Solutions - Seguridad Garantizada</p>
+        </fieldset>
+    </footer>
+
+</body>
+</html>
