@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>WestCam - Estructura Segmentada (Fase 1)</title>
+</head>
+<body>
+
+    <header>
+        <p>@ WestCam Solutions</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tienda">Productos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#academia">Cursos</a></li>
+                <li><a href="#carrito">Carrito</a></li>
+                <li><a href="#pago">Pago</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+            <fieldset>
+                <legend><strong>Página 1: Bienvenida</strong></legend>
+                <h2>Servicios Profesionales</h2>
+                <p>[Espacio para Imagen: Banner Principal]</p>
+                <p>Adquiera no solo productos, sino soluciones implementadas con éxito.</p>
+                <button type="button">Ver Catálogo</button>
+            </fieldset>
+            <br>
+        </section>
+
+        <section id="tienda">
+            <fieldset>
+                <legend><strong>Página 2: Tienda de Equipos</strong></legend>
+                <h2>Nuestros Productos Mas Top</h2>
+                <article>
+                    <fieldset>
+                        <legend>Cámara Dahua</legend>
+                        <h3>Dahua - Cámara Análoga Bullet 2.8 MM 5MP</h3>
+                        <p>Precio: $60.00 + ITBMS</p>
+                        <button type="button">Añadir al Carrito</button>
+                    </fieldset>
+                </article>
+            </fieldset>
+            <br>
+        </section>
+
+        <section id="servicios">
+            <fieldset>
+                <legend><strong>Página 3: Soporte Técnico</strong></legend>
+                <h2>Instalaciones Profesionales</h2>
+                <p>Instalaciones para instituciones, comercios y casas en Panamá Oeste.</p>
+                <ul>
+                    <li>Instalación Presencial</li>
+                    <li>Configuración Remota</li>
+                </ul>
+                <button type="button">Contactar Técnico</button>
+            </fieldset>
+            <br>
+        </section>
+
+        <section id="academia">
+            <fieldset>
+                <legend><strong>Página 4: WestCam Academy</strong></legend>
+                <h2>DOMINA TU INSTALACIÓN 🛠️</h2>
+                <ul>
+                    <li>✅ TUTORIALES PASO A PASO EN VIDEO</li>
+                    <li>✅ CONFIGURACIÓN DE RED SEGURA</li>
+                    <li>✅ ACCESO DE POR VIDA</li>
+                </ul>
+                <p>Precio del Curso: $25.00</p>
+                <button type="button">Comprar Acceso</button>
+            </fieldset>
+            <br>
+        </section>
+
+        <section id="carrito">
+            <fieldset>
+                <legend><strong>Página 5: Gestión de Compra</strong></legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dahua Bullet 5MP</td>
+                            <td>$60.00 + ITBMS</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><strong>Total Estimado: $64.20</strong></p>
+                <button type="button">Siguiente >></button>
+            </fieldset>
+            <br>
+        </section>
+
+        <section id="pago">
+            <fieldset>
+                <legend><strong>Página 6: Finalizar Pedido</strong></legend>
+                <form>
+                    <fieldset>
+                        <legend>Datos del Cliente</legend>
+                        <label for="f-nombre">Nombre*:</label>
+                        <input type="text" id="f-nombre" required><br><br>
+                        
+                        <label for="f-apellido">Apellido*:</label>
+                        <input type="text" id="f-apellido" required>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Ubicación de Facturación</legend>
+                        <label for="f-calle">Dirección de Calle*:</label>
+                        <input type="text" id="f-calle" placeholder="Calle y casa" required><br><br>
+                        
+                        <label for="f-prov">Provincia*:</label>
+                        <select id="f-prov">
+                            <option>Panamá Oeste</option>
+                        </select>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Método de Pago</legend>
+                        <label for="f-tarjeta">Número de tarjeta:</label>
+                        <input type="text" id="f-tarjeta" placeholder="1222 333 444"><br><br>
+                        
+                        <label>
+                            <input type="checkbox" required> Acepto los Términos y condiciones*
+                        </label>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Realizar Pedido</button>
+                </form>
+            </fieldset>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <fieldset>
+            <legend>Información de Contacto</legend>
+            <p>Dirección: Costa Verde, La Chorrera</p>
+            <p>WhatsApp: (+507) 6564-6376</p>
+            <p>&copy; 2026 WestCam Solutions</p>
+        </fieldset>
+    </footer>
+
+</body>
+</html>
